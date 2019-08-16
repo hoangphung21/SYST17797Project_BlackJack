@@ -59,7 +59,7 @@ public class Main {
                 
                 System.out.println("Dealer has: ");
                 System.out.println(dealerDeck.toString());
-                System.out.println("Dealer value: " + dealerDeck.getCard(0).toString());
+                System.out.println("Dealer value: " + dealerDeck.cardsValue());
                 
                 //ask player what to do next
                 System.out.println("You want to Hit(1) or Stay(2)");
@@ -125,6 +125,7 @@ public class Main {
                     endRound = true;
             }
             
+            //move all the played cards back to the deck
             playerDeck.moveCardstoDeck(playingDeck);
             dealerDeck.moveCardstoDeck(playingDeck);
             System.out.println("End of game");

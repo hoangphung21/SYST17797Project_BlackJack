@@ -50,6 +50,7 @@ public class Deck {
         
     }
     
+    // remove the used cards from the deck
     public void removeCard(int i){
         this.cards.remove(i);
     }
